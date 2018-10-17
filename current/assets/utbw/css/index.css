@@ -1,0 +1,116 @@
+/*colour palette
+
+white: #FFFFFF;
+light blue: #114964;
+dark blue: #00334A;
+black: #231F20;
+
+
+
+*/
+
+
+/*global reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*fix up for older browsers to draw the new semantic elements*/
+
+header,
+nav,
+main,
+aside,
+article,
+section,
+footer,
+figure,
+figcaption {
+    display: block;
+}
+
+
+/*background content styling*/
+
+body {
+
+    display: flex;
+    /*    horizontal*/
+    justify-content: center;
+    /*    vertical*/
+    align-content: center;
+    background: #00334a;
+    background-repeat: no-repeat;
+    background: -moz-linear-gradient(top, #00334a 0%, #231f20 100%);
+    background: -webkit-linear-gradient(top, #00334a 0%, #231f20 100%);
+    background: linear-gradient(to bottom, #00334a 0%, #231f20 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00334a', endColorstr='#231f20', GradientType=0);
+    height: 100%;
+}
+
+
+
+
+/*main content styling*/
+
+html {
+    font-size: 10px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+#canvas-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#main-content {
+/*    margin-top: -1.5vw;*/
+}
+
+#wrapper {
+    width: 100vw;
+}
+
+#whale-wrapper {
+    margin-top: 7vw;
+    z-index: 999;
+}
+
+#whale-img {
+    width: 70vw;
+
+}
+
+#title {
+    width: 40vw;
+    margin-bottom: 2vw;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-family: "Rubik", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5vw;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+}
+
+#explore-button {
+    margin-top: 2vw;
+    width: 13vw;
+}
+
+

@@ -1,0 +1,455 @@
+/*colour palette
+
+white: #FFFFFF;
+light blue: #114964;
+dark blue: #00334A;
+black: #231F20;
+
+
+
+*/
+
+
+/*global reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*fix up for older browsers to draw the new semantic elements*/
+
+header,
+nav,
+main,
+aside,
+article,
+section,
+footer,
+figure,
+figcaption {
+    display: block;
+}
+
+
+/*background content styling*/
+
+body {}
+
+
+
+
+
+/*SECTION SCROLLING STYLING*/
+
+.pagination {
+    position: fixed;
+    left: 20px;
+    top: 52%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    z-index: 999;
+}
+
+.pagination a {
+    display: block;
+    height: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 4px;
+    color: #FFFFFF;
+
+}
+
+.pagination a.active:after {
+    box-shadow: inset 0 0 0 5px;
+}
+
+.pagination a .hover-text {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 30px;
+    top: 7px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    padding-right: 15px;
+    color: #FFFFFF;
+}
+
+.pagination a:hover .hover-text {
+    opacity: 1;
+}
+
+.pagination a:after {
+    -webkit-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border: 1px solid;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+/*main content styling*/
+
+html {
+    max-width: 1200px;
+    font-size: 12px;
+    margin: 0 auto;
+    /*    height: 100vh;*/
+    overflow: hidden;
+    background-color: #00334a, url(../img/paper-01.png);
+    ;
+    background-repeat: no-repeat;
+    background: -moz-linear-gradient(top, #00334a 0%, #231f20 100%), url(../img/paper-01.png);
+    ;
+    background: -webkit-linear-gradient(top, #00334a 0%, #231f20 100%), url(../img/paper-01.png);
+    ;
+    background: linear-gradient(to bottom, #00334a 0%, #231f20 100%), url(../img/paper-01.png);
+    ;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00334a', endColorstr='#231f20', GradientType=0);
+    background-blend-mode: multiply;
+}
+
+
+body {}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+
+
+
+/*GLOBAL STYLING*/
+
+.content {
+    display: block;
+}
+
+
+#logo-wrapper {
+    position: fixed;
+    top: 50px;
+    margin-left: -1vw;
+    text-align: center;
+    width: 100%;
+}
+
+#logo {
+    margin: 0 21vw;
+    text-align: center;
+    width: 130px;
+}
+
+#heading {
+    text-align: center;
+    transform: rotate(90deg);
+    position: fixed;
+    top: 53%;
+    right: -70px;
+}
+
+h1 {
+    color: #FFF;
+    font-family: "Rubik", sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+
+h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+}
+
+p {
+    color: #FFFFFF;
+    font-family: "Rubik", sans-serif;
+    font-weight: 100;
+    font-size: 1.27rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.02rem;
+
+}
+
+.space-after {
+    margin-bottom: 2rem;
+}
+
+
+
+
+/*SECTION 1 STYLING*/
+
+#sec01 {
+    width: 55vw;
+    margin: 0 auto;
+}
+
+.introduction {
+    z-index: -999;
+}
+
+#sec01-text {
+    margin-top: 8vh;
+}
+
+
+
+
+
+
+
+
+
+
+/*SECTION 02 STYLING*/
+
+/*-----wheel styling-----*/
+
+.wheel-wrapper {
+
+}
+
+.wheel-wrapper li {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 100;
+    width: 5rem;
+    height: 10rem;
+    transform-origin: 100% 100%;
+    pointer-events: none;
+    /*    overflow: hidden;*/
+    left: 22%;
+    margin-top: -7px;
+    /*    border: solid red;*/
+}
+
+.wheel-wrapper li a {
+    display: block;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    pointer-events: auto;
+    transform: skew(-45deg) rotate(-45deg) scale(1);
+    line-height: 10rem;
+}
+
+.wheel-wrapper li a span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.wheel-wrapper li:first-child {
+    transform: rotate(0deg) skew(45deg);
+}
+
+.wheel-wrapper li:nth-child(2) {
+    transform: rotate(90deg) skew(45deg);
+}
+
+.wheel-wrapper li:nth-child(3) {
+    transform: rotate(180deg) skew(45deg);
+}
+
+.wheel-wrapper li:nth-child(4) {
+    transform: rotate(270deg) skew(45deg);
+}
+
+
+#wheel-wrapper {
+
+}
+
+.wheel-wrapper h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-family: "Rubik", "sans-serif";
+    color: #FFFFFF;
+    opacity: 0.8;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.wheel-wrapper h2:hover {
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+
+/*----wheel styling end--------*/
+
+#sec02-wrapper {
+    margin: -12vh auto;
+
+}
+
+.sec02-container {
+    display: flex;
+    justify-content: center;
+}
+
+#sec02-text {
+    
+}
+
+#sec02-text p {
+    font-size: 1.15rem;
+    position: absolute;
+    width: 40%;
+    margin-left: 12%;
+    height: auto;
+}
+
+
+
+
+
+
+
+/*SECTION 03 STYLING*/
+
+#sec03-text {
+    padding-top: 10vh;
+    width: 55vw;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/*SECTION 04 STYLING*/
+
+.sec04-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 18vh;
+
+}
+
+
+#map {
+    margin: -8vh 15px 0 -60px;
+    width: 400px;
+}
+
+#sec04-wrapper {
+    margin: 0 auto;
+
+}
+
+#sec04-text {
+    width: 35%;
+
+}
+
+
+/*SECTION 05 STYLING*/
+
+.comm-icons {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    margin: 0 auto;   
+}
+
+
+
+.icon {
+    width: 100px;
+    display: flex;
+    margin-top: -70px;
+
+}
+
+#sec05-text {
+    width: 55%;
+    margin: 40px auto 0 auto;
+
+}
+
+#feeding {
+    margin-left: -50px;
+}
+
+#feeding-text {
+    position: absolute;
+    width: 55%;
+}
+
+#courting-text {
+    position: absolute;
+    width: 55%;
+}
+
+
+#ship {
+    width: 90px;
+}
+
+#ship-text {
+    position: absolute;
+    width: 55%;
+}
+
+
+
+
+/*SECTION 6 STYLING*/
+
+#sec06-text {
+    padding-top: 18vh;
+    width: 55vw;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*---------------MEDIA QUERY--------------*/
+
+@media only screen and (max-width: 1024px) {}
