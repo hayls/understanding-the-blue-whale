@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 255.1 66.3" style="enable-background:new 0 0 255.1 66.3;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:2.2345;stroke-miterlimit:10;}
-	.st1{fill:#FFFFFF;}
-	.st2{font-family:'Rubik-Light';}
-	.st3{font-size:25px;}
-	.st4{letter-spacing:2;}
+	.st0{display:none;}
+	.st1{display:inline;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#2A3B43;}
+	.st4{font-family:'Rubik-Medium';}
+	.st5{font-size:25px;}
 </style>
-<path class="st0" d="M222.7,61.6H32.4c-15.7,0-28.4-12.7-28.4-28.4v0c0-15.7,12.7-28.4,28.4-28.4h190.4c15.7,0,28.4,12.7,28.4,28.4
-	v0C251.2,48.8,238.4,61.6,222.7,61.6z"/>
-<text transform="matrix(1 0 0 1 72.1688 43.1113)" class="st1 st2 st3 st4">EXPLORE</text>
+<g id="Layer_2" class="st0">
+	<rect x="-38" y="-12.7" class="st1" width="414" height="107"/>
+</g>
+<g id="Layer_1">
+	<path class="st2" d="M222.7,61.6H32.4C16.7,61.6,4,48.9,4,33.2l0,0C4,17.5,16.7,4.8,32.4,4.8h190.4c15.7,0,28.4,12.7,28.4,28.4l0,0
+		C251.2,48.8,238.4,61.6,222.7,61.6z"/>
+	<text transform="matrix(1 0 0 1 72.1688 42.1113)" class="st3 st4 st5">EXPLORE</text>
+</g>
 </svg>

@@ -9,6 +9,10 @@ black: #231F20;
 
 */
 
+/*import fonts here*/
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500');
+
+
 
 /*global reset*/
 
@@ -41,78 +45,6 @@ body {}
 
 
 
-/*SECTION SCROLLING STYLING*/
-
-.pagination {
-    position: fixed;
-    left: 20px;
-    top: 52%;
-    transform: translateY(-50%);
-    font-size: 1.4rem;
-    z-index: 999;
-}
-
-.pagination a {
-    display: block;
-    height: 20px;
-    margin-bottom: 5px;
-    position: relative;
-    padding: 4px;
-    color: #FFFFFF;
-
-}
-
-.pagination a.active:after {
-    box-shadow: inset 0 0 0 5px;
-}
-
-.pagination a .hover-text {
-    font-family: "Rubik", sans-serif;
-    font-size: 1.2rem;
-    position: absolute;
-    left: 30px;
-    top: 7px;
-    opacity: 0;
-    -webkit-transition: opacity 0.5s ease;
-    transition: opacity 0.5s ease;
-    padding-right: 15px;
-    color: #FFFFFF;
-}
-
-.pagination a:hover .hover-text {
-    opacity: 1;
-}
-
-.pagination a:after {
-    -webkit-transition: box-shadow 0.5s ease;
-    transition: box-shadow 0.5s ease;
-    width: 10px;
-    height: 10px;
-    display: block;
-    border: 1px solid;
-    border-radius: 50%;
-    content: '';
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-}
-
-ol,
-ul,
-li {
-    list-style: none;
-}
-
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-
-
-
 /*main content styling*/
 
 html {
@@ -121,6 +53,7 @@ html {
     margin: 0 auto;
     /*    height: 100vh;*/
     overflow: hidden;
+/*
     background-color: #00334a, url(../img/paper-01.png);
     ;
     background-repeat: no-repeat;
@@ -132,6 +65,7 @@ html {
     ;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00334a', endColorstr='#231f20', GradientType=0);
     background-blend-mode: multiply;
+*/
 }
 
 
@@ -158,6 +92,7 @@ body {}
     margin-left: -1vw;
     text-align: center;
     width: 100%;
+    z-index: 999;
 }
 
 #logo {
@@ -174,6 +109,16 @@ body {}
     right: -70px;
 }
 
+#bg-texture {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -9;
+    opacity: 0.6;
+}
+
+
+
 h1 {
     color: #FFF;
     font-family: "Rubik", sans-serif;
@@ -188,7 +133,7 @@ h2 {
     color: #FFFFFF;
     font-family: "Rubik", sans-serif;
     font-size: 1.2rem;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 0.2rem;
 }
 
@@ -244,16 +189,17 @@ p {
 .wheel-wrapper li {
     position: absolute;
     color: #FFFFFF;
-    font-size: 1.2rem;
+/*    font-size: 1.2rem;*/
+    font-size: 0rem;
     font-family: "Rubik", sans-serif;
     font-weight: 100;
     width: 5rem;
-    height: 10rem;
+    height: 9.9rem;
     transform-origin: 100% 100%;
     pointer-events: none;
     /*    overflow: hidden;*/
     left: 22%;
-    margin-top: -7px;
+    margin-top: -18px;
     /*    border: solid red;*/
 }
 
@@ -279,19 +225,19 @@ p {
 }
 
 .wheel-wrapper li:first-child {
-    transform: rotate(0deg) skew(45deg);
+    transform: rotate(45deg) skew(45deg);
 }
 
 .wheel-wrapper li:nth-child(2) {
-    transform: rotate(90deg) skew(45deg);
+    transform: rotate(135deg) skew(45deg);
 }
 
 .wheel-wrapper li:nth-child(3) {
-    transform: rotate(180deg) skew(45deg);
+    transform: rotate(225deg) skew(45deg);
 }
 
 .wheel-wrapper li:nth-child(4) {
-    transform: rotate(270deg) skew(45deg);
+    transform: rotate(315deg) skew(45deg);
 }
 
 
@@ -301,11 +247,11 @@ p {
 
 .wheel-wrapper h2 {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 0.1rem;
     font-family: "Rubik", "sans-serif";
     color: #FFFFFF;
-    opacity: 0.8;
+    opacity: 0.45;
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
@@ -342,8 +288,18 @@ p {
     height: auto;
 }
 
+#comparison-img {
+    width: 190px;
+    margin-left: 200px;
+    position: relative;
+    margin-top: 40px;
+}
 
+#comparison-text p {
+    font-size: 1.3rem;
+    margin-left: 200px;
 
+}
 
 
 
@@ -374,6 +330,7 @@ p {
 #map {
     margin: -8vh 15px 0 -60px;
     width: 400px;
+    opacity: 0.8;
 }
 
 #sec04-wrapper {
@@ -449,7 +406,44 @@ p {
 
 
 
+/*SECTION 7 STYLING*/
+
+#sec07-text {
+    width: 55vw;
+    margin: 0 auto;
+    
+}
+
+#sec07-text p{
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    
+}
+
+h3 {
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
 
 /*---------------MEDIA QUERY--------------*/
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+    
+    
+}

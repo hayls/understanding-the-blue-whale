@@ -24,7 +24,7 @@ function windowResized() {
 
 function draw() {
 
-    background('#00334A');
+    background('#2a3b43');
 
 //    loadPixels();
 //
@@ -46,7 +46,7 @@ function draw() {
 
 
 
-    translate(-1/18 * windowWidth, -1/8 * windowHeight);
+    translate(mouseX - windowWidth/2, mouseY - windowHeight/2);
     // rectMode(CENTER);
     strokeWeight(1.5);
 

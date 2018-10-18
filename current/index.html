@@ -14,7 +14,20 @@
     <script src="assets/plugins/p5/js/p5.dom.min.js"></script>
 
     <!--    load JS scripts here-->
-        <script src="assets/utbw/js/index_sketch.js"></script>
+    <script src="assets/utbw/js/index_sketch.js"></script>
+    <script src="assets/utbw/js/index.js"></script>
+
+    <!--audio here-->
+
+<!--   see code for js file as fallback for audio tag not working-->
+    <audio autoplay loop preload="auto">
+        <source src="assets/sounds/179927__yosarrian__underwater.wav" type="audio/wav">
+        <source src="assets/sounds/179927_yosarrian_underwater.ogg" type="audio/ogg">
+        <source src="assets/sounds/179927_yosarrian_underwater.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+
 
 
 </head>
@@ -24,18 +37,20 @@
 <body>
 
     <div id="wrapper">
-        <div id="canvas-container">
 
+        <div id="canvas-container">
+            <figure><img src="assets/utbw/img/background/speckles.png" alt="bg texture" id="bg-texture"></figure>
 
 
 
             <figure id="whale-wrapper"><img src="assets/utbw/img/whale-white.png" alt="blue whale" id="whale-img"></figure>
+
             <div id="main-content">
 
-            
-            <h1>UNDERSTANDING THE BLUE WHALE</h1>
 
-<!--                <figure><img src="images/utbw-title-thin-white-wide.png" alt="understanding the blue whale" id="title"></figure>-->
+                <h1>UNDERSTANDING THE BLUE WHALE</h1>
+
+                <!--                <figure><img src="images/utbw-title-thin-white-wide.png" alt="understanding the blue whale" id="title"></figure>-->
 
                 <h2>AN INTERACTIVE ONLINE EXHIBITION</h2>
 
@@ -47,12 +62,7 @@
 
     </div>
 
-<!--
-    <audio autoplay loop preload="auto">
-        <source src="sounds/179927__yosarrian__underwater.wav" type="audio/wav">
-        Your browser does not support the audio element.
-    </audio>
--->
+
 
 </body>
 

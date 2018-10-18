@@ -10,43 +10,86 @@
     <link href="assets/utbw/css/utbw.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/plugins/fullpage/css/fullpage.min.css">
 
-    <!--   audio element here-->
 
-    <!--
+    <!--   SCRIPTS  -->
+
+
+    <!--    load p5js library here-->
+    <script src="assets/plugins/p5/js/p5.min.js"></script>
+    <script src="assets/plugins/p5/js/p5.dom.min.js"></script>
+    <script src="assets/plugins/p5/js/p5.sound.min.js"></script>
+
+    <!--    load jQuery library here-->
+    <!--    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">-->
+    <script src="assets/plugins/jquery/js/jquery-3.3.1.min.js"></script>
+
+    <!--    load JS scripts here-->
+    <!--    <script src="sketch.js"></script>-->
+    <script src="assets/utbw/js/utbw.js"></script>
+    <script type="text/javascript" src="assets/plugins/fullpage/js/fullpage.min.js"></script>
+
+    <!--    <script src="jquery.scrollify.js"></script>-->
+    <script src="assets/plugins/circletype/js/circletype.min.js"></script>
+
+
+    <!--     load p5js sketches here-->
+    <script src="assets/utbw/js/utbw-sketches.js"></script>
+
+   
+    <!--   audio element here-->
+<!--   see code for js file as fallback for audio tag not working-->
     <audio autoplay loop preload="auto">
-        <source src="sounds/179927__yosarrian__underwater.wav" type="audio/wav">
+        <source src="sounds/179927__yosarrian__underwater.wav" type="audio/wav" id="bgmus-audio">
+        <source src="assets/sounds/179927_yosarrian_underwater.ogg" type="audio/ogg">
+        <source src="assets/sounds/179927_yosarrian_underwater.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
--->
 
 </head>
 
-<body>
-                        <figure id="logo-wrapper">
-                        <a href="index.html"><img src="assets/utbw/img/whale-white-bold.png" alt="whale home page icon" id="logo"></a>
-                    </figure>
-    
-                                    <div id="heading">
-                    <h1>UNDERSTANDING THE BLUE WHALE</h1>
-                </div>
-    
-    
-    <div id="fullpage">
 
+
+
+<body>
+
+    <figure id="logo-wrapper">
+        <a href="index.html"><img src="assets/utbw/img/whale-white-bold.png" alt="whale home page icon" id="logo"></a>
+    </figure>
+
+    <div id="heading">
+        <h1>UNDERSTANDING THE BLUE WHALE</h1>
+
+    </div>
+
+
+    <div id="fullpage">
+        
+        
         <!--        1. INTRODUCTION SECTION-->
         <div class="section" id="section1">
+           <figure><img src="assets/utbw/img/background/speckles.png" alt="bg texture" id="bg-texture"></figure>
             <div id="sec01">
+               
                 <!--                <script id="sketch" src="utbw_sketch_section-01.js"></script>-->
                 <div id="sec01-text" class="content">
+                   
                     <p class="space-after">The Blue Whale is one of the most extraordinary creatures to ever have existed on the face of the Earth. Even by the super-sizes of the Dinosaurs, the Blue Whale is believed to be one of the largest, if not the largest, of animals ever to inhabit the Earth. It is certainly the largest mammal ever to have lived.</p>
                     <p>But it’s not just the Blue Whale’s size that makes them extraordinary to naturalists and animal lovers. The fact that they are very shy, rarely seen and their numbers are estimated to be so low, makes them almost mystical creatures.</p>
+                    
                 </div>
             </div>
         </div>
+    
         <!--       END 1. INTRODUCTION SECTION-->
+        
+        
+        
 
         <!--        2. FACTS SECTION-->
+        
+        
         <div class="section" id="section2">
+           <figure><img src="assets/utbw/img/background/speckles.png" alt="bg texture" id="bg-texture"></figure>
             <div id="sec02-wrapper">
                 <div class="wheel-wrapper" id="wheel-wrapper">
                     <ul class="sec02-container">
@@ -80,15 +123,28 @@
                     </div>
 
                     <div id="comparison-text" class="sec02-container" style="display:none">
-                        <p>JEWS</p>
+                       
+                        <p>Size relative to a bus:</p>
+                        
+                        <figure><img src="assets/utbw/img/comparison-sketch.png" alt="comparison bus" id="comparison-img"></figure>
                     </div>
                 </div>
             </div>
         </div>
+        
+        
+        
         <!--       END 2. FACTS SECTION-->
 
+       
+       
+       
+       
         <!--       3. DIET SECTION-->
+        
+        
         <div class="section" id="section3">
+           <figure><img src="assets/utbw/img/background/speckles.png" alt="bg texture" id="bg-texture"></figure>
             <div id="sec03-wrapper">
                 <div id="sec03-text" class="content">
                     <p class="space-after">The Blue Whale is almost totally dependent on krill. Krill are small, shrimp-like animals that grow up to about 6 cm in length and are typically found in dense swarms, often of more than 10,000 krill in each cubic square metre. The word krill is in fact a Norwegian phrase that actually means ‘Whale food.’ A Blue Whale is estimated to eat as much as four tonnes of krill a day.</p>
@@ -96,11 +152,19 @@
                 </div>
             </div>
         </div>
+        
         <!--     END 3. DIET SECTION-->
 
+       
+       
+       
         <!--       4. HABITAT SECTION-->
+    
         <div class="section" id="section4">
+           <figure><img src="assets/utbw/img/background/speckles.png" alt="bg texture" id="bg-texture"></figure>
+           
             <div id="sec04-wrapper">
+               
                 <section>
                     <div id="map-wrapper">
                         <div class="sec04-container">
@@ -116,16 +180,26 @@
                 </section>
             </div>
         </div>
+        
+        
         <!--     END 4. HABITAT SECTION-->
+        
+        
+        
 
         <!--       5. COMMUNICATION SECTION-->
+        
+        
         <div class="section" id="section5">
+           <figure><img src="assets/utbw/img/background/speckles.png" alt="bg texture" id="bg-texture"></figure>
             <div id="sec05-wrapper">
+               
                 <div class="comm-icons" id="comm-icons">
                     <figure><a href="#communication"><img src="assets/utbw/img/krill-white.png" alt="feeding" class="icon" id="feeding"></a></figure>
                     <figure><a href="#communication"><img src="assets/utbw/img/courting-white.png" alt="courting" class="icon" id="courting"></a></figure>
                     <figure><a href="#communication"><img src="assets/utbw/img/ship-white.png" alt="ship interference" class="icon" id="ship"></a></figure>
                 </div>
+                
                 <div id="sec05-text">
                     <div id="feeding-text">
                         <p>Research suggests that Blue Whales – typically solitary animals, though known to travel in pairs and congregate into larger groups at specific times to feed – can communicate with one another via calls across oceans.</p>
@@ -138,505 +212,53 @@
 
                     <div id="ship-text" style="display:none">
                         <p>Research suggests that whale songs evolved to take advantage of the ocean's sound channel, especially for some of their most important kinds of communication, including finding a mate. Interestingly, only male Blue Whales sing loud songs, suggesting a sexual reason for the calls, which are potentially being cancelled out by the din of modern shipping in the sea.</p>
+                        
                     </div>
                 </div>
             </div>
+            
         </div>
+        
+        
         <!--     END 5. COMMUNICATION SECTION-->
+        
+        
+        
 
         <!--     6. POPULATION SECTION-->
+        
         <div class="section" id="section6">
+           <figure><img src="assets/utbw/img/background/speckles.png" alt="bg texture" id="bg-texture"></figure>
             <div id="sec06-wrapper">
                 <div id="sec06-text" class="content">
                     <p class="space-after">When whaling was at its peak in the early nineteenth century, the Blue Whale was safe from the Captain Ahabs of this world simply because they were far too big and far too fast to hunt in rowing boats with hand harpoons. But by the end of the nineteenth century and with the invention of the harpoon gun and steam ships, the size that had made them too much for earlier whalers, now made Blue Whales a major draw because of the amount of oil that could be extracted from a single whale. The slaughter peaked in 1931 when over 29,000 Blue Whales were killed in one season. Experts believe that as much as 99% of the entire Blue Whale population was killed through whaling until it was made illegal in 1986.</p>
-                    <p class="space-after">Some statistics show that the Blue Whale population is increasing slightly, though it is taking a long time to recover from the near-extinction that occurred in the early twentieth century through commercial whaling.</p>
                 </div>
             </div>
         </div>
         <!--     END 6. POPULATION SECTION-->
 
-    </div>
-
-     <!--    load p5js library here-->
-     <script src="assets/plugins/p5/js/p5.min.js"></script>
-     <script src="assets/plugins/p5/js/p5.dom.min.js"></script>
- 
-     <!--    load jQuery library here-->
-     <!--    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">-->
-     <script src="assets/plugins/jquery/js/jquery-3.3.1.min.js"></script>
- 
-     <!--    load JS scripts here-->
-     <!--    <script src="sketch.js"></script>-->
-     <script src="assets/utbw/js/utbw.js"></script>
-     <script type="text/javascript" src="assets/plugins/fullpage/js/fullpage.min.js"></script>
- 
-     <!--    <script src="jquery.scrollify.js"></script>-->
-     <script src="assets/plugins/circletype/js/circletype.min.js"></script>
-
-
-    <script type="text/javascript">
-    let current_sketch
-
-    let sketch2 = (sketch) => {
-        let angle = 0;
-        let heart;
-        var canvas;
-        var bg;
-
-        class Heart {
-            constructor(x, y) {
-                this.x = x;
-                this.y = y;
-
-            }
-
-            rotate() {
-                sketch.rotateX(angle);
-                sketch.rotateY(angle * 0.3);
-                sketch.rotateZ(angle * 0.2);
-            }
-
-            show() {
-                sketch.strokeWeight(1.5);
-                sketch.stroke(255);
-                sketch.fill(255, 30);
-                sketch.box(20);
-
-            }
-
-
-        }
-
-        sketch.setup = () => {
-            var cnv = sketch.createCanvas(sketch.windowWidth, sketch.windowHeight, sketch.WEBGL);
-            cnv.style('z-index', '-99');
-            cnv.position(0, 0);
-
-
-            heart1 = new Heart(-630, -15);
-
-        }
-        // sketch.windowResized = function() {
-        //     sketch.resizeCanvas(sketch.windowWidth, sketch.windowHeight);
-        // }
-
-        sketch.draw = () => {
-            sketch.background('#00334A');
-            sketch.push();
-            sketch.translate(heart1.x, heart1.y);
-            heart1.rotate();
-            heart1.show();
-            sketch.pop();
-
-            angle += 0.06;
-
-        }
-    }
-    let sketch1 = (sketch) => {
-        let angle = 0;
-        let opacity = 1;
-        let down = true;
-        let heart;
-        let hearts;
-        let canvas;
-        let bg;
-        let Y_AXIS = 1;
-        let X_AXIS = 2;
-        let b1, b2, c1, c2;
-
-        class Heart {
-            constructor(x, y) {
-                this.x = x;
-                this.y = y;
-
-            }
-
-            rotate() {
-                sketch.rotateX(angle);
-                sketch.rotateY(angle * 0.3);
-                sketch.rotateZ(angle * 0.2);
-            }
-
-            show(opacity=1) {
-                sketch.strokeWeight(1.5);
-                sketch.stroke(`rgba(255,255,255,${opacity})`);
-                sketch.fill(255, opacity*30);
-                sketch.box(20);
-
-            }
-
-
-        }
-
-        //function preload() {
-        //    bg = loadImage("images/background/paper-bg-01.png");
-        //}
-
-        function setGradient(x, y, w, h, c1, c2, axis) {
-            sketch.noFill();
-
-            if (axis == Y_AXIS) {  // Top to bottom gradient
-                for (var i = y; i <= y+h; i++) {
-                    var inter = sketch.map(i, y, y+h, 0, 1);
-                    var c = sketch.lerpColor(c1, c2, inter);
-                    sketch.stroke(c);
-                    sketch.line(x, i, x+w, i);
-                }
-            }  
-            else if (axis == X_AXIS) {  // Left to right gradient
-                for (var i = x; i <= x+w; i++) {
-                    var inter = sketch.map(i, x, x+w, 0, 1);
-                    var c = sketch.lerpColor(c1, c2, inter);
-                    sketch.stroke(c);
-                    sketch.line(i, y, i, y+h);
-                }
-            }
-        }
-
-        sketch.setup = function() {
-
-            var cnv = sketch.createCanvas(sketch.windowWidth, sketch.windowHeight, sketch.WEBGL);
-
-            cnv.style('z-index', '-99');
-            //    cnv.parent("sec01");
-            cnv.position(0, 0);
-
-            hearts = [new Heart(-400, -170), new Heart(-475, 180), new Heart(-170, -80), new Heart(50, 80), new Heart(420, -200), new Heart(300, 15), new Heart(470, 250)]
-
-            c1 = sketch.color(0, 51, 74);
-            c2 = sketch.color(35, 31, 32);
-
-        }
-
-        sketch.windowResized = function() {
-            sketch.resizeCanvas(windowWidth, windowHeight);
-        }
-
-        sketch.draw = function(){
-
-            sketch.background('#00334A');
-            setGradient(-sketch.width/2, 0, sketch.width, sketch.height, c1, c2, Y_AXIS);
-            for(let heart of hearts){
-                sketch.push();
-                sketch.translate(heart.x, heart.y);
-                heart.rotate();
-                heart.show(opacity);
-                sketch.pop();
-            }
-            
-            angle += 0.06;
-
-            if(down){
-                if(opacity <= 0.3)
-                    down = false
-                else
-                    opacity -= 0.01
-            }
-            else{
-                if(opacity >= 1)
-                    down = true
-                else
-                    opacity += 0.02
-            }
-
-            console.log(opacity)
-
-
-        }
-
-    }
-
-    $(document).ready(function(){
-        var myFullpage = new fullpage('#fullpage', {
-            anchors: ['introduction', 'facts', 'diet', 'habitat', 'communication', 'population'],
-            navigation: true,
-            navigationPosition: 'left',
-            navigationTooltips: ['Introduction', 'Facts', 'Diet', 'Habitat', 'Communication', 'Population'],
-            onLeave: (origin, destination, direction) => {
-                if(current_sketch){
-                    current_sketch.remove()
-                }
-                if(destination.anchor == "introduction"){
-                    current_sketch = new p5(sketch1)
-                }
-                else if(destination.anchor == "facts"){
-                    current_sketch = new p5(sketch2)
-                }
-            }
-        });
-        current_sketch = new p5(sketch1)
-    })
+  
+  
+   
+   <!--     7. CONSERVATION SECTION-->
         
-    </script>
-
-
-
-
-
-
-
-    <!--  SECTION 1 HERE-->
-
-    <!----------------->
-
-    <!--        <section class="introduction" data-section-name="introduction">-->
-    <!----------------->
-
-    <!--
-        <div class="section" id="section0">
-            <div id="sec01">
-                                <script id="sketch" src="utbw_sketch_section-01.js"></script>
-
-
-                <div id="title">
-
-                    <figure id="logo-wrapper">
-                        <a href="index.html"><img src="images/whale-white-bold.png" alt="whale home page icon" id="logo"></a>
-                    </figure>
+        <div class="section" id="section7">
+           <figure><img src="assets/utbw/img/background/speckles.png" alt="bg texture" id="bg-texture"></figure>
+            <div id="sec07-wrapper">
+                <div id="sec07-text" class="content">
+                    <p class="space-after">Some statistics show that the Blue Whale population is increasing slightly, though it is taking a long time to recover from the near-extinction that occurred in the early twentieth century through commercial whaling. Our oceans still need to be nurtured and cared for.</p>
+                    <h3 class="space-after">Help us preserve our oceans today.</h3>
+                    <h4 class="space-after"><a href="https://www.nationalgeographic.com.au/tv/kingdom-of-the-blue-whale/">Read more about the Blue Whale</a></h4>
+                    <h4 class="space-after"><a href="https://www.sealegacy.org/">Join The Tide</a></h4>
                 </div>
-
-                <div id="heading">
-                    <h1>UNDERSTANDING THE BLUE WHALE</h1>
-                </div>
-
-                <div id="sec01-text" class="content">
-
-                    <p class="space-after">The Blue Whale is one of the most extraordinary creatures to ever have existed on the face of the Earth. Even by the super-sizes of the Dinosaurs, the Blue Whale is believed to be one of the largest, if not the largest, of animals ever to inhabit the Earth. It is certainly the largest mammal ever to have lived.</p>
-
-                    <p>But it’s not just the Blue Whale’s size that makes them extraordinary to naturalists and animal lovers. The fact that they are very shy, rarely seen and their numbers are estimated to be so low, makes them almost mystical creatures.</p>
-
-
-                </div>
-
-            </div>
-
-        </div>
--->
-
-    <!--        </section>-->
-
-
-    <!--  SECTION 1 END-->
-
-
-
-    <!--  SECTION 2 HERE-->
-
-
-    <!--
-        <div class="section" id="section1">
-            <div id="sec02-wrapper">
--->
-
-    <!----------------->
-    <!--            <section class="facts" data-section-name="facts">-->
-
-
-    <!--                <figure><img id="wheel" src="images/wheel.png" alt="wheel"></figure>-->
-
-    <!----------------->
-
-    <!--
-                <div class="wheel-wrapper" id="wheel-wrapper">
-                    <ul class="sec02-container">
-                        <li><a href="#facts"><span class="average-size" id="average-size">
-                                    <h2 class="select">AVERAGE SIZE</h2>
-                                </span></a></li>
-                        <li><a href="#facts"><span class="comparison" id="comparison">
-                                    <h2 class="select">COMPARISON</h2>
-                                </span></a></li>
-                        <li><a href="#facts"><span class="features" id="features">
-                                    <h2 class="select">FEATURES</h2>
-                                </span></a></li>
-                        <li><a href="#facts"><span class="lifespan" id="lifespan">
-                                    <h2 class="select">LIFESPAN</h2>
-                                </span></a></li>
-                    </ul>
-                </div>
-
-
-
-                <div id="sec02-text" class="content">
-
-                    <div id="average-size-text" class="sec02-container">
-                                            style=display:none
-                        <p>According to the American Cetacean Society the longest Blue Whale ever caught was a 108-foot – 33 metre - adult female captured in Antarctica. Typically, though, Blue Whales in the Southern Hemisphere reach lengths of 90-100 feet (30 metres), while Northern Hemisphere Blue Whales are slightly smaller at 25 metres. There is no way that the Blue Whale could live life on land as it is too heavy and needs the water to support its weight: it would be crushed by its own weight on land.</p>
-                    </div>
-
-                    <div id="features-text" class="sec02-container" style="display:none">
-                        <p>The Blue Whale has an almost U-shaped head and, unlike many other whales, does not appear to have quite so many barnacles or other parasites attached to its body, so they have a smooth surface. Its top fin – the dorsal – is relatively small in relation to its sheer size and is located quite a long way back on the body. The Blue Whale also has short flippers in relation to its total body length. Also, as you would expect from such a large whale, when a blue whale exhales, the spray from its blowhole can reach nearly 30 ft (9m) into the air.</p>
-                    </div>
-
-                    <div id="lifespan-text" class="sec02-container" style="display:none">
-                        <p>According to the IUCN Red List Status for the Blue Whale, they are listed as an 'endangered' species. Their current population trend is currently increasing. Though it is difficult to track how long they live based on frequent sightings, a Blue Whale's average life span in the wild is approximately 80 to 90 years.
-                        </p>
-                    </div>
-
-                </div>
--->
-
-
-    <!--            </section>-->
-
-
-    <!--
             </div>
         </div>
--->
-
-
-
-    <!--  SECTION 2 END-->
-
-
-
-    <!--        SECTION 3 HERE-->
-
-    <!--
-        <div class="section" id="section2">
-            <div id="sec03-wrapper">
--->
-
-    <!----------------->
-
-    <!--            <section class="diet" data-section-name="diet">-->
-
-    <!----------------->
-
-    <!--
-                <div id="sec03-text" class="content">
-                    <p class="space-after">The Blue Whale is almost totally dependent on krill. Krill are small, shrimp-like animals that grow up to about 6 cm in length and are typically found in dense swarms, often of more than 10,000 krill in each cubic square metre. The word krill is in fact a Norwegian phrase that actually means ‘Whale food.’ A Blue Whale is estimated to eat as much as four tonnes of krill a day.</p>
-
-                    <p>Due to their dependence on one species for food, scientists fear the Blue Whale could suffer if the krill population is depleted by fishing or global warming.</p>
-
-                </div>
--->
-
-    <!----------------->
-    <!--            </section>-->
-    <!----------------->
-
-    <!--
-            </div>
-        </div>
--->
-
-
-    <!--SECTION 3 END-->
-
-
-
-
-    <!--        SECTION 4 HERE-->
-
-    <!--
-        <div id="sec04-wrapper">
-
-            <section class="population" data-section-name="population">
-
-                <div id="map-wrapper">
-
-                    <div class="sec04-container">
-
-                        <figure>
-                            <img src="images/map-white.png" alt="population map" id="map">
-                        </figure>
-
-
-
-                        <div id="sec04-text">
-                            <p class="space-after">Blue whales, though more plentiful in the Southern Hemisphere, can actually be found in all oceans of the world. In 2006, the Blue Whale was spotted in the Arctic Sea, Atlantic Ocean, Indian Ocean and Pacific Ocean, as well as the Antarctic Ocean.</p>
-
-                            <p>The numbers of Blue Whales were severely depleted by commercial whaling, which only came to an end in 1986. The Blue Whale remains on the endangered species list.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-        </div>
--->
-
-
-    <!--SECTION 4 END-->
-
-
-
-    <!--        SECTION 5 HERE-->
-
-    <!--
-        <div id="sec05-wrapper">
-
-            <section class="communication" data-section-name="communication">
-
-                <div class="comm-icons">
-                    <figure><a href="#communication"><img src="images/krill-white.png" alt="feeding" class="icon" id="feeding"></a></figure>
-                    <figure><a href="#communication"><img src="images/courting-white.png" alt="courting" class="icon" id="courting"></a></figure>
-                    <figure><a href="#communication"><img src="images/ship-white.png" alt="ship interference" class="icon" id="ship"></a></figure>
-                </div>
-
-
-                <div id="sec05-text">
-
-                    <div id="feeding-text">
-                        <p>Research suggests that Blue Whales – typically solitary animals, though known to travel in pairs and congregate into larger groups at specific times to feed – can communicate with one another via calls across oceans.</p>
-                    </div>
-
-                    <div id="courting-text" style="display:none">
-                        <p>The Blue Whale can make sounds far below human hearing, at very low frequencies, which can travel hundreds of miles across the sea. In fact, scientists believe that the very-low-frequency courtship songs of Blue Whales are the most powerful biological sounds in the oceans. But the noise created by ships and other human activities could be interfering by drowning out whale calls when they are looking for a potential mate.</p>
-                    </div>
-
-
-                    <div id="ship-text" style="display:none">
-                        <p>Research suggests that whale songs evolved to take advantage of the ocean's sound channel, especially for some of their most important kinds of communication, including finding a mate. Interestingly, only male Blue Whales sing loud songs, suggesting a sexual reason for the calls, which are potentially being cancelled out by the din of modern shipping in the sea.</p>
-                    </div>
-
-
-                </div>
-
-
-
-            </section>
-
-        </div>
--->
-
-
-
-    <!--SECTION 5 END-->
-
-
-
-
-    <!--        SECTION 6 HERE-->
-
-    <!--
-        <div id="sec06-wrapper">
-
-            <section class="diet" data-section-name="diet">
-
-                <div id="sec06-text" class="content">
-                    <p class="space-after">When whaling was at its peak in the early nineteenth century, the Blue Whale was safe from the Captain Ahabs of this world simply because they were far too big and far too fast to hunt in rowing boats with hand harpoons. But by the end of the nineteenth century and with the invention of the harpoon gun and steam ships, the size that had made them too much for earlier whalers, now made Blue Whales a major draw because of the amount of oil that could be extracted from a single whale. The slaughter peaked in 1931 when over 29,000 Blue Whales were killed in one season. Experts believe that as much as 99% of the entire Blue Whale population was killed through whaling until it was made illegal in 1986.</p>
-
-                    <p class="space-after">Some statistics show that the Blue Whale population is increasing slightly, though it is taking a long time to recover from the near-extinction that occurred in the early twentieth century through commercial whaling.</p>
-
-                </div>
-            </section>
-
-        </div>
--->
-
-
-    <!--SECTION 6 END-->
-
-
-
-
-
-
-
-
-
+        <!--     END 7. CONSERVATION SECTION-->
+   
+   
+   
+   
+    </div>
 
 </body>
 
