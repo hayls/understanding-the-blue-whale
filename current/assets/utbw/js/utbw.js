@@ -1,9 +1,15 @@
 $(function () {
 
-    //load sound here
+    //load sounds here
         var bgmus = new Audio("assets/sounds/179927__yosarrian__underwater.wav");
         bgmus.currentTime = 0;
         bgmus.play();
+    
+        var bgwhale = new Audio("assets/sounds/nepblue24s10x.wav");
+        bgwhale.currentTime = 0;
+        bgwhale.play();
+        bgwhale.volume = 0.3;
+    
 
 //    var audio = document.getElementById('bgmus-audio');
 //    audio.currentTime = 0;
