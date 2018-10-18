@@ -25,6 +25,7 @@ $(function () {
     //import sketch area
 
     $(document).ready(function () {
+        let current_sketch = false
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['introduction', 'facts', 'diet', 'habitat', 'communication', 'population', 'conservation'],
             navigation: true,
@@ -53,7 +54,27 @@ $(function () {
                 }
             }
         });
-        current_sketch = new p5(sketch1)
+        if(window.location.hash){
+            let location = window.location.hash.substr(1)
+            if (location == "introduction") {
+                current_sketch = new p5(sketch1)
+            } else if (location == "facts") {
+                current_sketch = new p5(sketch2)
+            } else if (location == "diet") {
+                current_sketch = new p5(sketch3)
+            } else if (location == "habitat") {
+                current_sketch = new p5(sketch4)
+            } else if (location == "communication") {
+                current_sketch = new p5(sketch5)
+            } else if (location == "population") {
+                current_sketch = new p5(sketch6)
+            } else if (location == "conservation") {
+                current_sketch = new p5(sketch7)
+            }
+        }
+        else
+            current_sketch = new p5(sketch1)
+        console.log(myFullpage.getActiveSlide())
     })
 
 
